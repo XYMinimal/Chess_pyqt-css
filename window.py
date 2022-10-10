@@ -8,15 +8,14 @@ from troop_list import *
 class Root(QWidget):
     def __init__(self, parent=None):
         super(Root, self).__init__(parent)
-        self.resize(950, 950)
+        self.resize(1001, 1001)
         self.boardI = QPixmap(r"assets\board.png")
         self.board = QLabel(self)
         self.board.setPixmap(self.boardI)
         self.board.resize(self.boardI.width(),
                           self.boardI.height())
-        pawn1 = Pawn(self, "orange")
+        pawn1 = Queen(self, "red")
         pawn1.draw()
-
 
 
 if __name__ == "__main__":

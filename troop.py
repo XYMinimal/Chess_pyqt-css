@@ -19,3 +19,6 @@ class Troop:
         self.frame.setPixmap(self.image)
         self.frame.resize(self.image.width(),
                           self.image.height())
+
+    def rolecall(self):
+        print(f"assets\\{self.team}\\{self.icon}")
